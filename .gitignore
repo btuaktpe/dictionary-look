@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+data.json
+.obsidian/
+node_modules/
+*.zip

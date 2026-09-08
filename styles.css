@@ -1,0 +1,277 @@
+body.theme-dark {
+  --ny: "New York", ui-serif, "Iowan Old Style", Palatino, Georgia, serif;
+  --ny-xl: ".New York Extra Large", "New York Extra Large", "New York", ui-serif, "Iowan Old Style", Palatino, Georgia, serif;
+  --ny-l: ".New York Large", "New York Large", "New York", ui-serif, "Iowan Old Style", Palatino, Georgia, serif;
+  --sf: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+
+  --apple-label: #f5f5f7;
+  --apple-secondary: rgba(235, 235, 245, 0.6);
+  --apple-separator: rgba(84, 84, 88, 0.45);
+  --dict-hud: rgba(0, 0, 0, 0.38);
+  --dict-radius: 10px;
+
+  --font-text: var(--ny) !important;
+  --font-text-theme: var(--ny) !important;
+  --font-text-override: "New York" !important;
+  --font-heading: var(--ny) !important;
+  --h1-font: var(--ny-xl) !important;
+  --h2-font: var(--ny-l) !important;
+  --h3-font: var(--ny) !important;
+  --h4-font: var(--sf) !important;
+  --h5-font: var(--sf) !important;
+  --h6-font: var(--sf) !important;
+  --inline-title-font: var(--ny) !important;
+  --font-interface: var(--sf) !important;
+  --font-interface-theme: var(--sf) !important;
+  --font-interface-override: var(--sf) !important;
+
+  --translucent-dark-opacity: 0%;
+  --background-primary: transparent;
+  --background-primary-alt: transparent;
+  --background-secondary: transparent;
+  --background-secondary-alt: transparent;
+  --background-modifier-border: var(--apple-separator);
+  --workspace-background-translucent: var(--dict-hud);
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+  --tab-container-background: transparent;
+  --tab-background-active: rgba(255, 255, 255, 0.06);
+  --text-normal: var(--apple-label);
+  --text-muted: var(--apple-secondary);
+  --text-faint: rgba(235, 235, 245, 0.3);
+  --h1-color: var(--apple-label);
+  --h2-color: var(--apple-label);
+  --h3-color: var(--apple-label);
+  --h1-size: 2.85rem !important;
+  --h1-weight: 700 !important;
+  --h1-line-height: 1.05 !important;
+  --h2-size: 2.1rem !important;
+  --h2-weight: 700 !important;
+  --h3-weight: 700 !important;
+  --tab-radius: var(--dict-radius) !important;
+  --tab-radius-active: var(--dict-radius) !important;
+  --radius-s: var(--dict-radius) !important;
+}
+
+body.theme-dark.is-translucent {
+  --workspace-background-translucent: var(--dict-hud) !important;
+  --translucent-dark-opacity: 0% !important;
+  --background-primary: transparent !important;
+  --background-primary-alt: transparent !important;
+  --background-secondary: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --background-modifier-cover: transparent !important;
+  --raised-background: transparent !important;
+  --tab-container-background: transparent !important;
+}
+
+html,
+body,
+body.theme-dark.is-translucent,
+body.theme-dark.is-translucent .workspace-split,
+body.theme-dark.is-translucent .workspace-tabs,
+body.theme-dark.is-translucent .workspace-tab-header-container,
+body.theme-dark.is-translucent .workspace-tab-container,
+body.theme-dark.is-translucent .workspace-leaf,
+body.theme-dark.is-translucent .workspace-leaf-content,
+body.theme-dark.is-translucent .view-content,
+body.theme-dark.is-translucent .view-header,
+body.theme-dark.is-translucent .markdown-source-view,
+body.theme-dark.is-translucent .markdown-preview-view,
+body.theme-dark.is-translucent .markdown-preview-sizer,
+body.theme-dark.is-translucent .cm-editor,
+body.theme-dark.is-translucent .cm-scroller,
+body.theme-dark.is-translucent .cm-gutters,
+body.theme-dark.is-translucent .mod-root,
+body.theme-dark.is-translucent .mod-sidedock,
+body.theme-dark.is-translucent .app-container,
+body.theme-dark.is-translucent .horizontal-main-container,
+body.theme-dark.is-translucent .workspace-ribbon,
+body.theme-dark.is-translucent .workspace-drawer,
+body.theme-dark.is-translucent .nav-header,
+body.theme-dark.is-translucent .nav-files-container,
+body.theme-dark.is-translucent .status-bar,
+body.theme-dark.is-translucent .titlebar,
+body.theme-dark.is-translucent.layout-fusion .mod-root .workspace-tab-container,
+body.theme-dark.is-translucent.layout-fusion .mod-sidedock.mod-left-split {
+  background-color: transparent !important;
+}
+
+body.theme-dark.is-translucent .workspace {
+  background-color: var(--dict-hud) !important;
+}
+
+body.theme-dark .workspace-split.mod-root .workspace-tab-container,
+body.theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-container,
+body.theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container,
+body.theme-dark .mod-sidedock.mod-left-split,
+body.theme-dark .workspace-split.mod-left-split,
+body.theme-dark .mod-left-split .workspace-tabs,
+body.theme-dark .mod-left-split .workspace-tab-container {
+  border-radius: var(--dict-radius) !important;
+  overflow: hidden;
+  corner-shape: superellipse(1.5);
+}
+
+body.theme-dark .markdown-preview-view,
+body.theme-dark .markdown-source-view,
+body.theme-dark .cm-editor,
+body.theme-dark .cm-content,
+body.theme-dark .cm-scroller {
+  color: var(--apple-label);
+  font-family: var(--ny) !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.125rem;
+  line-height: 1.47;
+  letter-spacing: -0.011em;
+}
+
+body.theme-dark .markdown-preview-view strong,
+body.theme-dark .cm-strong {
+  font-family: var(--ny) !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: var(--apple-label);
+}
+
+body.theme-dark .markdown-preview-view h1,
+body.theme-dark .inline-title,
+body.theme-dark .cm-header-1,
+body.theme-dark .cm-line.HyperMD-header-1 {
+  font-family: var(--ny-xl) !important;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  letter-spacing: -0.028em;
+  color: var(--apple-label);
+  -webkit-font-smoothing: antialiased;
+}
+
+body.theme-dark .markdown-preview-view h2,
+body.theme-dark .cm-header-2,
+body.theme-dark .cm-line.HyperMD-header-2 {
+  font-family: var(--ny-l) !important;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  letter-spacing: -0.022em;
+  color: var(--apple-label);
+}
+
+body.theme-dark .markdown-preview-view h3,
+body.theme-dark .cm-header-3 {
+  font-family: var(--ny) !important;
+  font-optical-sizing: auto;
+  font-weight: 700 !important;
+  color: var(--apple-label);
+}
+
+body.theme-dark .markdown-preview-view h4,
+body.theme-dark .markdown-preview-view h5,
+body.theme-dark .markdown-preview-view h6,
+body.theme-dark .cm-header-4,
+body.theme-dark .cm-header-5,
+body.theme-dark .cm-header-6 {
+  font-family: var(--sf) !important;
+  font-size: 0.72rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--apple-secondary) !important;
+}
+
+body.theme-dark .markdown-preview-view blockquote,
+body.theme-dark .markdown-source-view .cm-quote,
+body.theme-dark .cm-quote {
+  border: none !important;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ny) !important;
+  font-optical-sizing: auto;
+  font-style: normal !important;
+  font-weight: 400;
+  color: var(--apple-secondary) !important;
+  font-size: 1.05rem;
+}
+
+body.theme-dark .markdown-preview-view mark,
+body.theme-dark .markdown-source-view .cm-highlight,
+body.theme-dark .cm-highlight {
+  background: transparent !important;
+  color: var(--apple-secondary) !important;
+  font-family: var(--sf) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 0.95em;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+body.theme-dark .markdown-preview-view em,
+body.theme-dark .markdown-preview-view i,
+body.theme-dark .cm-em {
+  font-family: var(--ny) !important;
+  font-optical-sizing: auto;
+  font-style: italic;
+  color: var(--apple-secondary);
+}
+
+body.theme-dark em.em-star,
+body.theme-dark .em-star,
+body.theme-dark .cm-em.em-star,
+body.theme-dark .em-star .cm-em,
+body.theme-dark .cm-em .em-star {
+  font-style: normal !important;
+  font-synthesis: none !important;
+  font-weight: 400 !important;
+  color: var(--apple-secondary) !important;
+}
+
+body.theme-dark em.em-under,
+body.theme-dark .em-under,
+body.theme-dark .cm-em.em-under,
+body.theme-dark .em-under .cm-em,
+body.theme-dark .cm-em .em-under {
+  font-style: italic !important;
+  color: var(--apple-secondary) !important;
+}
+
+body.theme-dark .markdown-preview-view hr {
+  border: none;
+  border-top: 0.5px solid var(--apple-separator);
+  margin: 1.75rem 0 0.85rem;
+}
+
+body.theme-dark .markdown-preview-view ol > li::marker {
+  color: var(--apple-label);
+  font-family: var(--ny) !important;
+}
+
+body.theme-dark .view-header .view-header-title,
+body.theme-dark .view-header .view-header-title-parent {
+  display: none !important;
+}
+
+body.theme-dark .mod-root .workspace-tab-header,
+body.theme-dark .mod-root .workspace-tab-header-inner-title {
+  font-family: var(--ny) !important;
+  font-optical-sizing: auto;
+}
+
+body.theme-dark,
+body.theme-dark .workspace-ribbon,
+body.theme-dark .workspace-ribbon-collapse-btn,
+body.theme-dark .nav-header,
+body.theme-dark .nav-buttons-container,
+body.theme-dark .search-input-container,
+body.theme-dark .mod-left-split .workspace-tab-header,
+body.theme-dark .mod-left-split .workspace-tab-header-inner-title,
+body.theme-dark .mod-sidedock .workspace-tab-header,
+body.theme-dark .mod-sidedock .workspace-tab-header-inner-title,
+body.theme-dark .nav-files-container,
+body.theme-dark .nav-file-title,
+body.theme-dark .nav-folder-title,
+body.theme-dark .status-bar,
+body.theme-dark .view-header-title {
+  font-family: var(--sf) !important;
+}
