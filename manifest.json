@@ -3,7 +3,7 @@
   "name": "Dictionary Look",
   "version": "1.0.0",
   "minAppVersion": "1.6.0",
-  "description": "Adds dictionary-style typography and macOS HUD glass.",
+  "description": "Adds dictionary-style typography.",
   "author": "btuaktpe",
   "authorUrl": "https://github.com/btuaktpe",
   "isDesktopOnly": false

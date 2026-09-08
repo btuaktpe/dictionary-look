@@ -1,6 +1,6 @@
 # Dictionary Look
 
-Dictionary-style typography and macOS HUD glass for Obsidian. Dark theme.
+Dictionary-style typography for Obsidian. Dark theme.
 
 ## Install
 
