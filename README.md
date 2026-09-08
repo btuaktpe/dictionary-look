@@ -16,6 +16,4 @@ Unzip the [latest release](https://github.com/btuaktpe/dictionary-look/releases/
 - `*text*` muted
 - `_text_` example
 
-Command Palette: **Sözlük**. No default hotkeys.
-
 MIT
