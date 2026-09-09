@@ -2,6 +2,8 @@
 
 Dictionary-style typography for Obsidian. Dark theme. HUD glass is macOS only.
 
+![Dictionary Look](preview.jpg)
+
 ## Install
 
 Unzip the [latest release](https://github.com/btuaktpe/dictionary-look/releases/latest) into `.obsidian/plugins/dictionary-look/`, reload, and enable the plugin.
