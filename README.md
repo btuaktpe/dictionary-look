@@ -2,7 +2,7 @@
 
 Dictionary-style typography for Obsidian. Dark theme. HUD glass is macOS only.
 
-![Dictionary Look](preview.png)
+![Dictionary Look](preview.png?v=2)
 
 ## Install
 
