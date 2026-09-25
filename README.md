@@ -2,7 +2,7 @@
 
 Dictionary-style typography for Obsidian, paired with native macOS HUD glass.
 
-![Dictionary Look](preview.png?v=2)
+![Dictionary Look](preview.png)
 
 ## Install
 
